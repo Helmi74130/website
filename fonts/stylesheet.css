@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'steroniteregular';
+    src: url('steronite-webfont.woff2') format('woff2'),
+         url('steronite-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'mortal_waveregular';
+    src: url('mortal_wave-webfont.woff2') format('woff2'),
+         url('mortal_wave-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'octageregular';
+    src: url('octage-webfont.woff2') format('woff2'),
+         url('octage-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'aerosregular';
+    src: url('aeros-webfont.woff2') format('woff2'),
+         url('aeros-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

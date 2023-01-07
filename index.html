@@ -6,34 +6,121 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="/fonts/stylesheet.css">
   <title>My website</title>
 </head>
 <body class="body">
 
-  <header class="pt-3 pt-sm-5 text-light">
-    <div class="row gx-0">
-      <div class="col-12 col-sm-3 d-flex justify-content-center">
-        <a class="nav-link fs-1-md" href="/">My Website</a>
+  <div class="viewport-section">
+    <p class="text-background top-text-background">WEB DESIGN</p>
+    <p class="text-background bottom-text-background">DÉVELOPPEMENT</p>
+    <!-- HEADER START -->
+    <header class="pt-3 pt-sm-5 fs-3">
+      <div class="row gx-0">
+        <div class="col-12 col-sm-3 d-flex justify-content-center">
+          <a class="nav-link fs-1-m" href="/"><img height="80px" src="/img/logo.webp" alt="logo de l'entreprise">My website</a>
+        </div>
+        <div class="col-12 col-sm-8 d-flex justify-content-center justify-content-sm-end ">
+          <a class="nav-link me-3" href="#">Accueil</a>
+          <a class="nav-link me-3" href="#">Pricing</a>
+          <a class="nav-link me-3" href="#">Pricing</a>
+          <a class="nav-link" href="#">Pricing</a>
+        </div>
       </div>
-      <div class="col-12 col-sm-8 d-flex justify-content-center justify-content-sm-end ">
-        <a class="nav-link me-3" href="#">Accueil</a>
-        <a class="nav-link me-3" href="#">Pricing</a>
-        <a class="nav-link me-3" href="#">Pricing</a>
-        <a class="nav-link" href="#">Pricing</a>
+    </header>
+    <!-- SECTION START -->
+    <section class="container-fluid">
+      <div class="row gx-0">
+        <div class="col-6 d-flex flex-column align-items-center justify-content-center">
+          <h1 class="title text-center"><span>CONCEPTION</span> DE SITE WEB SUR MESURE</h1>
+          <p class="sub-title text-light">BOOSTER VOTRE VISIBILITÉ </p>
+          <div>
+            <button class="btn-contact mt-3">Contactez-nous <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="none" viewBox="0 0 24 24">
+              <g class="send">
+                <path  stroke="#FFFFFF" stroke-linecap="round" stroke-width="1.5" d="M9.407 14.593l3.058-3.058"/>
+                <path stroke="#FFFFFF" stroke-width="1.5" d="M15.564 7.908a.432.432 0 01.528.528l-2.677 10.175a.432.432 0 01-.724.195L5.194 11.31a.432.432 0 01.195-.724l10.175-2.677z"/>
+              </g>
+              </svg>
+              </button>
+          </div>
+        </div>
+        <div class="col-6 d-flex justify-content-center align-items-center">
+          <img src="/img/smartphone5.webp" alt="image de téléphone" class="img-fluid">
+        </div>
       </div>
-    </div>
-  </header>
-  <main class="text-light">
-    <div class="row gx-0">
-      <div class="col-6 d-flex justify-content-center">
-        <h1 class="">Votre agence de conception web</h1>
+    </section>
+  </div>
+  <!-- MAIN START -->
+  <main>
+    <section class="container description">
+      <h2 class="text-center subhead pt-5">DÉMARQUEZ VOUS</h2>
+      <div class="row justify-content-between gx-0 pt-5 pb-5">
+        <div class="col-3 d-flex flex-column align-items-center">
+          <article>
+            <div class="background-circle d-flex justify-content-center align-items-center">01</div>
+            <h3>UN DESIGN MODERNE</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium eius dolores error nihil deleniti ullam impedit ratione iusto, reiciendis, aspernatur corporis rem sed, magni ipsum in quaerat exercitationem inventore. Possimus!</p>
+          </article>
+          <article>
+            <div class="background-circle d-flex justify-content-center align-items-center">02</div>
+            <h3>UN DESIGN MODERNE</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium eius dolores error nihil deleniti ullam impedit ratione iusto, reiciendis, aspernatur corporis rem sed, magni ipsum in quaerat exercitationem inventore. Possimus!</p>
+          </article>
+        </div>
+        <div class="col-5 d-flex justify-content-center align-items-center"><img class="img-fluid" src="/img/pc.png" alt="image d'un téléphone"></div>
+        <div class="col-3">
+          <article>
+            <div class="background-circle d-flex justify-content-center align-items-center">03</div>
+            <h3>UN DESIGN MODERNE</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium eius dolores error nihil deleniti ullam impedit ratione iusto, reiciendis, aspernatur corporis rem sed, magni ipsum in quaerat exercitationem inventore. Possimus!</p>
+          </article>
+          <article>
+            <div class="background-circle d-flex justify-content-center align-items-center">04</div>
+            <h3>SATISFACTION</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium eius dolores error nihil deleniti ullam impedit ratione iusto, reiciendis, aspernatur corporis rem sed, magni ipsum in quaerat exercitationem inventore. Possimus!</p>
+          </article>
+        </div>
       </div>
-      <div class="col-5 d-flex justify-content-center">
-        <video class="img-fluid" loop autoplay muted src="/video/video.mp4"></video>
-      </div>
-    </div>
+    </section>
+    <!-- SECTION -->
+    <section class="accompanied">
+      <h4 class="text-center subhead pt-5">ON VOUS ACCOMPAGNE</h4>
+      <article class="container pt-5">
+        <div class="row justify-content-between gx-0">
+          <div class="col-12 col-lg-5"><img class="img-fluid" src="/img/accompagne.webp" alt="image de deux personnes se serrant la main"></div>
+          <div class="col-12 col-lg-6 d-flex flex-column align-items-center">
+            <h5>Nous sommes à vos cotés</h5>
+            <p class="mt-4 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem quas quis rem, blanditiis ut perferendis ratione officiis deserunt corrupti deleniti voluptate, maiores vel minima ad quo saepe provident dolorem laboriosam.</p>
+            <div class="w-100 d-flex flex-column justify-content-center bulle">
+              <div class="d-flex align-items-center">
+                <div>
+                  <img class="img-bulle" src="/img/analyse.png" alt="">
+                  <p class="text-center">Analyses</p>
+                </div>
+                <span class="bg-arrow"></span>
+                <div class="container-img-3">
+                  <img class="img-bulle" src="/img/dev.png" alt="">
+                  <p class="text-center">Conception</p>
+                </div>
+                <span class="bg-arrow"></span>
+              </div>
+              <div class="d-flex align-items-center">
+                <div class="container-img-2">
+                  <img class="img-bulle" src="/img/design.png" alt="">
+                  <p class="text-center">Design</p>
+                </div> 
+                <span class="bg-arrow arrow-2"></span>
+                <div class="container-img-3">
+                  <img class="img-bulle" src="/img/ship.png" alt="">
+                  <p class="text-center">Livraison</p>
+                </div> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
   </main>
-
 
 </body>
 <script src="/js/script.js"></script>
