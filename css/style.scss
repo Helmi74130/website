@@ -135,7 +135,7 @@ main{
 .faq{
   background: white;
   .card{
-    min-height: 250px;
+    min-height: 220px;
   }
   .card-title{
     font-family: 'aerosregular';
@@ -150,6 +150,8 @@ main{
   }
   .card-text{
     font-size: calc(0.6vw + 0.6vh + 0.6vmin);
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   .bi-patch-question-fill{
     color: white;
@@ -164,6 +166,20 @@ main{
       transform: rotate(15deg);
     }
   }
+}
+
+.contact{
+  .bg-desktop{
+    background-image: url('/img/desktop1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .title-contact{
+    font-weight: bolder;
+    font-family: 'aerosregular';
+  }
+
 }
 //ANIMATION
 
