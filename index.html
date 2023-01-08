@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="/bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="/fonts/stylesheet.css">
+  <link rel="stylesheet" href="/splide/splide.min.css">
+  <link rel="stylesheet" href="/splide/splide-skyblue.min.css">
   <title>My website</title>
 </head>
 <body class="body">
@@ -82,18 +84,21 @@
         </div>
       </div>
     </section>
-    <!-- SECTION -->
-    <section class="accompanied">
+    <!-- SECTION ACCOMPAGNE-->
+    <section class="accompanied pb-5">
       <h4 class="text-center subhead pt-5">ON VOUS ACCOMPAGNE</h4>
       <article class="container pt-5">
-        <div class="row justify-content-between gx-0">
-          <div class="col-12 col-lg-5"><img class="img-fluid" src="/img/accompagne.webp" alt="image de deux personnes se serrant la main"></div>
+        <div class="row justify-content-between gx-0 pt-5">
+          <div class="col-12 col-lg-5">
+            <h5 class="text-center">Nous sommes à vos cotés</h5>
+            <img class="img-fluid mt-3" src="/img/accompagne.webp" alt="image de deux personnes se serrant la main">
+          </div>
           <div class="col-12 col-lg-6 d-flex flex-column align-items-center">
-            <h5>Nous sommes à vos cotés</h5>
-            <p class="mt-4 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem quas quis rem, blanditiis ut perferendis ratione officiis deserunt corrupti deleniti voluptate, maiores vel minima ad quo saepe provident dolorem laboriosam.</p>
+            <!-- <h5>Nous sommes à vos cotés</h5> -->
+            <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem quas quis rem, blanditiis ut perferendis ratione officiis deserunt corrupti deleniti voluptate, maiores vel minima ad quo saepe provident dolorem laboriosam.</p>
             <div class="w-100 d-flex flex-column justify-content-center bulle">
               <div class="d-flex align-items-center">
-                <div>
+                <div class="ms-5">
                   <img class="img-bulle" src="/img/analyse.png" alt="">
                   <p class="text-center">Analyses</p>
                 </div>
@@ -115,13 +120,45 @@
                   <p class="text-center">Livraison</p>
                 </div> 
               </div>
-            </div>
+            </div>  
           </div>
         </div>
       </article>
     </section>
+    <!-- SECTION Realisation-->
+    <section class="making">
+      <h6 class="subhead text-center pt-5">DÉCOUVREZ NOS RÉALISATIONS</h6>
+      <div class="container pb-5">
+        <div class="row gx-0 pt-5">
+          <div class="col-6 pt-5">
+            <section class="splide" aria-label="Splide Basic HTML Example">
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide"><a href=""><img class="img-fluid" src="/img/realisation/sandrine.webp" alt="Image réalisation site de web"></a></li>
+                  <li class="splide__slide"><a href=""><img class="img-fluid" src="/img/realisation/illustre.webp" alt="Image réalisation site de web"></a></li>
+                  <li class="splide__slide"><a href=""><img class="img-fluid" src="/img/realisation/richard.webp" alt="Image réalisation site de web"></a></li>
+                  <li class="splide__slide"><a href=""><img class="img-fluid" src="/img/realisation/nike.webp" alt="Image réalisation site de web"></a></li>
+                  <li class="splide__slide"><a href=""><img class="img-fluid" src="/img/realisation/shampoo.webp" alt="Image réalisation site de web"></a></li>
+                  <li class="splide__slide"><a href=""><img class="img-fluid" src="/img/realisation/portfolio.webp" alt="Image réalisation site de web"></a></li>
+                  <li class="splide__slide"><a href=""><img class="img-fluid" src="/img/realisation/meteo.webp" alt="Image réalisation site de web"></a></li>
+                  <li class="splide__slide"><a href=""><img class="img-fluid" src="/img/realisation/diceroll.webp" alt="Image réalisation site de web"></a></li>
+                  <li class="splide__slide"><a href=""><img class="img-fluid" src="/img/realisation/orangebleu.webp" alt="Image réalisation site de web"></a></li>
+                </ul>
+              </div>
+            </section>
+          </div>
+          <div class="col-6">
+            <h6 class="text-center subtitle-making">Visitez nos dernières confections</h6>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
+  
+
 </body>
+<script src="/splide/splide.min.js"></script>
 <script src="/js/script.js"></script>
+
 </html>

@@ -100,6 +100,11 @@ main {
   border: 2px solid #a066cb;
 }
 
+.accompanied .bulle .img-bulle:hover {
+  border: 4px solid #a066cb;
+  scale: 1.1;
+}
+
 .accompanied .bulle .bg-arrow {
   margin-left: 10px;
   background-image: url("/img/arrow.png");
@@ -129,6 +134,15 @@ main {
 .subhead {
   font-size: calc(2vw + 2vh + 2vmin);
   font-family: 'steroniteregular';
+}
+
+.making .splide__slide img {
+  border: 1px solid #1836b2;
+  min-height: 100%;
+}
+
+.making .subtitle-making {
+  font-family: 'aerosregular';
 }
 
 .send {
