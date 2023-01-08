@@ -14,4 +14,9 @@ let splide = new Splide( '.splide', {
   splide.mount();
 
 
-  new Splide( '#slider2' ).mount();
+  new Splide( '#slider2', {
+    type   : 'loop',
+    autoplay: 'true',
+    arrowPath: 'none',
+    perPage: 2,
+  }  ).mount();

@@ -134,7 +134,7 @@
             <section class="splide" aria-label="Splide Basic HTML Example">
               <div class="splide__track">
                 <ul class="splide__list">
-                  <li class="splide__slide"><img class="img-fluid" src="/img/discover.png" alt="Image réalisation site de web"></li>
+                  <li class="splide__slide  d-flex justify-content-center align-items-center"><img class="img-fluid" src="/img/discover1.png" alt="Image réalisation site de web"></li>
                   <li class="splide__slide"><a href=""><img class="img-fluid" src="/img/realisation/sandrine.webp" alt="Image réalisation site de web"></a></li>
                   <li class="splide__slide"><a href=""><img class="img-fluid" src="/img/realisation/illustre.webp" alt="Image réalisation site de web"></a></li>
                   <li class="splide__slide"><a href=""><img class="img-fluid" src="/img/realisation/richard.webp" alt="Image réalisation site de web"></a></li>
@@ -157,52 +157,104 @@
     </section>
     <!-- FAQ-->
 
-    <section class="FAQ pt-5">
+    <section class="faq pt-5">
       <h6 class="subhead text-center pt-5">FAQ</h6>
-      <article class="container">
+      <article class="container pt-5">
         <div class="row gx-0">
           <div class="col-12">
             <section id="slider2" class="splide pb-5" aria-label="Splide Basic HTML Example">
               <div class="splide__track">
                 <ul class="splide__list">
-                  <li class="splide__slide">
+                  <!-- LEFT CARD 1-->
+                  <li class="splide__slide ps-3">
                     <div class="row">
-                      <div class="col-sm-6 mb-3 mb-sm-0">
-                        <div class="card">
+                      <div class="col-12">
+                        <div class="card bg-grey color-blue">
                           <div class="card-body">
-                            <h5 class="card-title">Special title treatment</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-sm-6">
-                        <div class="card">
-                          <div class="card-body">
-                            <h5 class="card-title">Special title treatment</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <h5 class="card-title">MOHAMED DUPRES</h5>
+                            <p class="card-text text-dark pt-2 ">Est ce que mon site sera unique?</p>
+                            <p class="text-end pe-5 ">
+                              <a data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" fill="currentColor" class="bi bi-patch-question-fill color-blue togle-btn-left" viewBox="0 0 16 16">
+                                <path d="M5.933.87a2.89 2.89 0 0 1 4.134 0l.622.638.89-.011a2.89 2.89 0 0 1 2.924 2.924l-.01.89.636.622a2.89 2.89 0 0 1 0 4.134l-.637.622.011.89a2.89 2.89 0 0 1-2.924 2.924l-.89-.01-.622.636a2.89 2.89 0 0 1-4.134 0l-.622-.637-.89.011a2.89 2.89 0 0 1-2.924-2.924l.01-.89-.636-.622a2.89 2.89 0 0 1 0-4.134l.637-.622-.011-.89a2.89 2.89 0 0 1 2.924-2.924l.89.01.622-.636zM7.002 11a1 1 0 1 0 2 0 1 1 0 0 0-2 0zm1.602-2.027c.04-.534.198-.815.846-1.26.674-.475 1.05-1.09 1.05-1.986 0-1.325-.92-2.227-2.262-2.227-1.02 0-1.792.492-2.1 1.29A1.71 1.71 0 0 0 6 5.48c0 .393.203.64.545.64.272 0 .455-.147.564-.51.158-.592.525-.915 1.074-.915.61 0 1.03.446 1.03 1.084 0 .563-.208.885-.822 1.325-.619.433-.926.914-.926 1.64v.111c0 .428.208.745.585.745.336 0 .504-.24.554-.627z"/>
+                              </svg></a>
+                            </p>
+                            <div class="collapse multi-collapse" id="multiCollapseExample1">
+                              <div class="card card-body bg-blue">
+                                Some placeholder content for the first collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </li>
-                  <li class="splide__slide"><div class="row">
-                    <div class="col-sm-6 mb-3 mb-sm-0">
-                      <div class="card">
-                        <div class="card-body">
-                          <h5 class="card-title">Special title treatment</h5>
-                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+
+                  <!-- RIGHT CARD 2-->
+                  <li class="splide__slide ps-3">
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="card bg-blue">
+                          <div class="card-body">
+                            <h5 class="card-title">ERIC CARLIER</h5>
+                            <p class="card-text pt-2">With supporting text below as a natural lead-in to additional content.</p>
+                            <p class="text-end pe-5 ">
+                              <a data-bs-toggle="collapse" href="#multiCollapseExample2" role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" fill="currentColor" class="bi bi-patch-question-fill " viewBox="0 0 16 16">
+                                <path d="M5.933.87a2.89 2.89 0 0 1 4.134 0l.622.638.89-.011a2.89 2.89 0 0 1 2.924 2.924l-.01.89.636.622a2.89 2.89 0 0 1 0 4.134l-.637.622.011.89a2.89 2.89 0 0 1-2.924 2.924l-.89-.01-.622.636a2.89 2.89 0 0 1-4.134 0l-.622-.637-.89.011a2.89 2.89 0 0 1-2.924-2.924l.01-.89-.636-.622a2.89 2.89 0 0 1 0-4.134l.637-.622-.011-.89a2.89 2.89 0 0 1 2.924-2.924l.89.01.622-.636zM7.002 11a1 1 0 1 0 2 0 1 1 0 0 0-2 0zm1.602-2.027c.04-.534.198-.815.846-1.26.674-.475 1.05-1.09 1.05-1.986 0-1.325-.92-2.227-2.262-2.227-1.02 0-1.792.492-2.1 1.29A1.71 1.71 0 0 0 6 5.48c0 .393.203.64.545.64.272 0 .455-.147.564-.51.158-.592.525-.915 1.074-.915.61 0 1.03.446 1.03 1.084 0 .563-.208.885-.822 1.325-.619.433-.926.914-.926 1.64v.111c0 .428.208.745.585.745.336 0 .504-.24.554-.627z"/>
+                              </svg></a>
+                            </p>
+                            <div class="collapse multi-collapse" id="multiCollapseExample2">
+                              <div class="card card-body bg-grey text-dark">
+                                Some  placeholder content for the first collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
-                    <div class="col-sm-6">
-                      <div class="card">
-                        <div class="card-body">
-                          <h5 class="card-title">Special title treatment</h5>
-                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </li>
+
+                  <!-- LEFT CARD 3-->
+                  <li class="splide__slide ps-3">
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="card bg-grey color-blue">
+                          <div class="card-body">
+                            <h5 class="card-title">DAVID BRUNET</h5>
+                            <p class="card-text pt-2">Est ce que mon site sera unique?</p>
+                            <p class="text-end pe-5 ">
+                              <a class="" data-bs-toggle="collapse" href="#multiCollapseExample3" role="button" aria-expanded="false" aria-controls="multiCollapseExample3"><svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" fill="currentColor" class="bi bi-patch-question-fill color-blue togle-btn-left" viewBox="0 0 16 16">
+                                <path d="M5.933.87a2.89 2.89 0 0 1 4.134 0l.622.638.89-.011a2.89 2.89 0 0 1 2.924 2.924l-.01.89.636.622a2.89 2.89 0 0 1 0 4.134l-.637.622.011.89a2.89 2.89 0 0 1-2.924 2.924l-.89-.01-.622.636a2.89 2.89 0 0 1-4.134 0l-.622-.637-.89.011a2.89 2.89 0 0 1-2.924-2.924l.01-.89-.636-.622a2.89 2.89 0 0 1 0-4.134l.637-.622-.011-.89a2.89 2.89 0 0 1 2.924-2.924l.89.01.622-.636zM7.002 11a1 1 0 1 0 2 0 1 1 0 0 0-2 0zm1.602-2.027c.04-.534.198-.815.846-1.26.674-.475 1.05-1.09 1.05-1.986 0-1.325-.92-2.227-2.262-2.227-1.02 0-1.792.492-2.1 1.29A1.71 1.71 0 0 0 6 5.48c0 .393.203.64.545.64.272 0 .455-.147.564-.51.158-.592.525-.915 1.074-.915.61 0 1.03.446 1.03 1.084 0 .563-.208.885-.822 1.325-.619.433-.926.914-.926 1.64v.111c0 .428.208.745.585.745.336 0 .504-.24.554-.627z"/>
+                              </svg></a>
+                            </p>
+                            <div class="collapse multi-collapse" id="multiCollapseExample3">
+                              <div class="card card-body bg-blue">
+                                Some placeholder content for the first collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <!-- RIGHT CARD 4-->
+                  <li class="splide__slide ps-3">
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="card bg-blue">
+                          <div class="card-body">
+                            <h5 class="card-title">MICHAEL DELAUNAY</h5>
+                            <p class="card-text pt-2">With supporting text below as a natural lead-in to additional content.</p>
+                            <p class="text-end pe-5 ">
+                              <a data-bs-toggle="collapse" href="#multiCollapseExample4" role="button" aria-expanded="false" aria-controls="multiCollapseExample4"><svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" fill="currentColor" class="bi bi-patch-question-fill togle-btn" viewBox="0 0 16 16">
+                                <path d="M5.933.87a2.89 2.89 0 0 1 4.134 0l.622.638.89-.011a2.89 2.89 0 0 1 2.924 2.924l-.01.89.636.622a2.89 2.89 0 0 1 0 4.134l-.637.622.011.89a2.89 2.89 0 0 1-2.924 2.924l-.89-.01-.622.636a2.89 2.89 0 0 1-4.134 0l-.622-.637-.89.011a2.89 2.89 0 0 1-2.924-2.924l.01-.89-.636-.622a2.89 2.89 0 0 1 0-4.134l.637-.622-.011-.89a2.89 2.89 0 0 1 2.924-2.924l.89.01.622-.636zM7.002 11a1 1 0 1 0 2 0 1 1 0 0 0-2 0zm1.602-2.027c.04-.534.198-.815.846-1.26.674-.475 1.05-1.09 1.05-1.986 0-1.325-.92-2.227-2.262-2.227-1.02 0-1.792.492-2.1 1.29A1.71 1.71 0 0 0 6 5.48c0 .393.203.64.545.64.272 0 .455-.147.564-.51.158-.592.525-.915 1.074-.915.61 0 1.03.446 1.03 1.084 0 .563-.208.885-.822 1.325-.619.433-.926.914-.926 1.64v.111c0 .428.208.745.585.745.336 0 .504-.24.554-.627z"/>
+                              </svg></a>
+                            </p>
+                            <div class="collapse multi-collapse" id="multiCollapseExample4">
+                              <div class="card card-body bg-grey text-dark">
+                                Some  placeholder content for the first collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -219,6 +271,7 @@
   
 
 </body>
+<script src="/bootstrap/bootstrap.bundle.min.js"></script>
 <script src="/splide/splide.min.js"></script>
 <script src="/js/script.js"></script>
 

@@ -137,12 +137,65 @@ main {
 }
 
 .making .splide__slide img {
-  border: 1px solid #1836b2;
   min-height: 100%;
 }
 
 .making .subtitle-making {
   font-family: 'aerosregular';
+}
+
+.faq {
+  background: white;
+}
+
+.faq .card {
+  min-height: 250px;
+}
+
+.faq .card-body {
+  position: relative;
+}
+
+.faq .card-body .answer {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.faq .card-title {
+  font-family: 'aerosregular';
+}
+
+.faq .bg-blue {
+  background: #1836b2;
+  color: white;
+}
+
+.faq .bg-grey {
+  background: #f5f5f5;
+  border: 1px solid #1836b2;
+}
+
+.faq .card-text {
+  font-size: calc(0.6vw + 0.6vh + 0.6vmin);
+}
+
+.faq .bi-patch-question-fill {
+  color: white;
+}
+
+.faq .color-blue {
+  color: #1836b2;
+}
+
+.faq .bi-patch-question-fill {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.faq .bi-patch-question-fill:hover {
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
 }
 
 .send {

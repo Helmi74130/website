@@ -121,7 +121,7 @@ main{
   
   .splide__slide{
     img{
-      border: 1px solid $colorblue;
+      //border: 1px solid $colorblue;
       min-height: 100%;
     }
   }
@@ -132,7 +132,39 @@ main{
   
 }
 
-
+.faq{
+  background: white;
+  .card{
+    min-height: 250px;
+  }
+  .card-title{
+    font-family: 'aerosregular';
+  }
+  .bg-blue{
+    background: $colorblue;
+    color: white;
+  }
+  .bg-grey{
+    background: #f5f5f5;
+    border: 1px solid $colorblue;
+  }
+  .card-text{
+    font-size: calc(0.6vw + 0.6vh + 0.6vmin);
+  }
+  .bi-patch-question-fill{
+    color: white;
+  }
+  .color-blue{
+    color: $colorblue;
+    
+  }
+  .bi-patch-question-fill{
+    transition: 0.3s;
+    &:hover{
+      transform: rotate(15deg);
+    }
+  }
+}
 //ANIMATION
 
 .send {
