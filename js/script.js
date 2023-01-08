@@ -1,14 +1,17 @@
-var splide = new Splide( '.splide', {
-  type   : 'loop',
-  autoplay: 'true'
+let splide = new Splide( '.splide', {
+  type   : 'fade',
+  rewind: boolean = true
 } );
-  var bar = splide.root.querySelector( '.my-carousel-progress-bar' );
+  let bar = splide.root.querySelector( '.my-carousel-progress-bar' );
   
   // Updates the bar width whenever the carousel moves:
   splide.on( 'mounted move', function () {
-    console.log('piou');
-    var end  = splide.Components.Controller.getEnd() + 1;
-    var rate = Math.min( ( splide.index + 1 ) / end, 1 );
+
+    let end  = splide.Components.Controller.getEnd() + 1;
+    let rate = Math.min( ( splide.index + 1 ) / end, 1 );
   } );
   
   splide.mount();
+
+
+  new Splide( '#slider2' ).mount();
