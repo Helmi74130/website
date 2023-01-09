@@ -265,4 +265,20 @@ footer .copyright {
             transform: translateY(-20px) translateX(20px);
   }
 }
+
+.ml7 {
+  position: relative;
+}
+
+.ml7 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.ml7 .letter {
+  -webkit-transform-origin: 0 100%;
+          transform-origin: 0 100%;
+  display: inline-block;
+}
 /*# sourceMappingURL=style.css.map */
