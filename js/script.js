@@ -1,4 +1,4 @@
-AOS.init();
+AOS.init({once: true,});
 
 /*
 * Generate a carousel
@@ -27,42 +27,38 @@ let splide = new Splide( '.splide', {
   }  ).mount();
 
 
-// Wrap every letter in a span
-let textWrapper = document.querySelector('.ml7 .letters');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-function animeText(){
-  anime.timeline({loop: false})
-  .add({
-    targets: '.ml7 .letter',
-    translateY: ["1.1em", 0],
-    translateX: ["0.55em", 0],
-    translateZ: 0,
-    rotateZ: [180, 0],
-    duration: 2000,
-    easing: "easeOutExpo",
-    delay: (el, i) => 50 * i
-  }).add({
-    targets: '.ml7',
-    opacity: 1,
-    duration: 1000,
-    easing: "easeOutExpo",
-    delay: 3000
-  });
-}
 
   let titleDemarqued = document.querySelector('#titleDemarqued');
+  let titleAcccompanied = document.querySelector('#titleAcccompanied');
+  let rocket = document.querySelector('#rocket');
   
-  function observeImg() {
-    const observerLastImg = new IntersectionObserver((entries) => {
+    const observerH2Title = new IntersectionObserver((entries) => {
         if (entries[0].isIntersecting) {
-          animeText()
+          titleDemarqued.classList.add('tracking-in-expand')
         }
+      }, {
+          threshold: 0.99
+          });
+
+    observerH2Title.observe(titleDemarqued);
+
+    const observerH3Title = new IntersectionObserver((entries) => {
+      if (entries[0].isIntersecting) {
+        titleAcccompanied.classList.add('tracking-in-expand')
+      }
     }, {
         threshold: 0.99
-    });
+        });
 
-    observerLastImg.observe(titleDemarqued);
-};
+  observerH3Title.observe(titleAcccompanied);
 
-observeImg();
+  const observerRocket = new IntersectionObserver((entries) => {
+    if (entries[0].isIntersecting) {
+      rocket.classList.add('bounce-out-top')
+    }
+  }, {
+      threshold: 0.99
+      });
+
+observerRocket.observe(rocket);
+  
