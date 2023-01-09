@@ -1,3 +1,8 @@
+AOS.init();
+
+/*
+* Generate a carousel
+*/
 let splide = new Splide( '.splide', {
   type   : 'fade',
   rewind: boolean = true
