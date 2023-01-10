@@ -149,17 +149,29 @@ main{
   height: 100vh;
   .splide__slide{
     img{
-      //border: 1px solid $colorblue;
       min-height: 100%;
+      border: 2px solid $colorblue;
     }
-  }
-  img{
-    border: 2px solid $colorblue;
   }
   .subtitle-making{
     font-family: 'aerosregular';
   }
-  
+}
+
+form{
+  background: white;
+  .form-container{
+    background: #f5f5f5;
+  }
+  h6{
+    font-family: 'aerosregular';
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: calc(1vw + 1vh + 1vmin);
+  }
+  .btn-form{
+    background: #1836B2;
+  }
 }
 
 .faq{
@@ -231,6 +243,59 @@ footer{
     font-family: 'steroniteregular';
     color: #a066cb;
     font-size: 1.2em;
+  }
+}
+
+.tchat{
+  position: fixed;
+  overflow-y: auto;
+  overflow-x: hidden;
+  bottom: 30px;
+  right: 30px;
+  width: 25vw;
+  height: 600px;
+  background: white;
+  box-shadow: 2px 2px 27px 0px rgba(0,0,0,0.45);
+  -webkit-box-shadow: 2px 2px 27px 0px rgba(0,0,0,0.45);
+  -moz-box-shadow: 2px 2px 27px 0px rgba(0,0,0,0.45);
+  .header-tchat{
+    color: white;
+    padding: 15px;
+    .img-content{
+      background: white;
+      border-radius: 50%;
+    }
+    p{
+      font-family: 'aerosregular';
+    }
+    svg{
+      &:hover{
+        cursor: pointer;
+        color: white !important;
+      }
+    }
+  }
+  .tchat-content{
+    flex-grow: 1;
+  }
+  .my-text{
+    max-width: 70%;
+    background: #f5f5f5;
+    margin-left: 15px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .response-auto{
+    text-align: end;
+    max-width: 70%;
+    background: $colorblue;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 15px;
+    &:hover{
+      cursor: pointer;
+      opacity: 0.8;
+    }
   }
 }
 //ANIMATION

@@ -4,7 +4,8 @@ AOS.init({once: true,});
 * Generate a carousel
 */
 let splide = new Splide( '.splide', {
-  type   : 'fade',
+  type   : 'loop',
+  autoplay: 'true',
   rewind: boolean = true
 } );
   let bar = splide.root.querySelector( '.my-carousel-progress-bar' );
@@ -61,4 +62,10 @@ let splide = new Splide( '.splide', {
       });
 
 observerRocket.observe(rocket);
-  
+
+
+/*
+* TCHAT BOTS
+*/
+
+let 
