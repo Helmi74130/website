@@ -175,10 +175,6 @@ main {
   font-family: 'steroniteregular';
 }
 
-.making {
-  height: 100vh;
-}
-
 .making .splide__slide img {
   min-height: 100%;
   border: 2px solid #1836b2;
@@ -186,6 +182,7 @@ main {
 
 .making .subtitle-making {
   font-family: 'aerosregular';
+  font-size: 1.2em;
 }
 
 form {
@@ -857,6 +854,37 @@ footer .copyright {
   }
   .viewport-section .content-viewport {
     margin-top: 100px;
+  }
+  .text-us-choice {
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .accompanied .bulle .container-img-3 {
+    margin-left: 15%;
+  }
+  .accompanied .bulle .bg-arrow {
+    width: 50px;
+  }
+  .accompanied .bulle .arrow-2 {
+    width: 50px;
+  }
+  .accompanied .bulle .img-bulle {
+    height: 80px;
+    width: 80px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .making .text-confection {
+    font-size: 1.1em;
+  }
+  .making .subtitle-making {
+    font-size: 1em;
+  }
+  .text-us-choice {
+    font-size: 1em;
   }
 }
 /*# sourceMappingURL=style.css.map */
