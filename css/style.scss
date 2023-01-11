@@ -253,7 +253,7 @@ footer{
   bottom: 30px;
   right: 30px;
   width: 25vw;
-  height: 600px;
+  height: 500px;
   background: white;
   box-shadow: 2px 2px 27px 0px rgba(0,0,0,0.45);
   -webkit-box-shadow: 2px 2px 27px 0px rgba(0,0,0,0.45);
@@ -298,6 +298,22 @@ footer{
     }
   }
 }
+
+.icone-message{
+  z-index: 10;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: $colorblue;
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+.none{
+  display: none;
+}
+
 //ANIMATION
 .send {
   animation: send 3s cubic-bezier(1, -0.47, 0.01, 1.37) infinite both;
@@ -514,5 +530,74 @@ footer{
     -webkit-transform: translateY(-800px);
             transform: translateY(-800px);
     opacity: 0;
+  }
+}
+
+.scale-out-ver-bottom {
+	-webkit-animation: scale-out-ver-bottom 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: scale-out-ver-bottom 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@-webkit-keyframes scale-out-ver-bottom {
+  0% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    -webkit-transform-origin: 0% 100%;
+            transform-origin: 0% 100%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    -webkit-transform-origin: 0% 100%;
+            transform-origin: 0% 100%;
+    opacity: 1;
+  }
+}
+@keyframes scale-out-ver-bottom {
+  0% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    -webkit-transform-origin: 0% 100%;
+            transform-origin: 0% 100%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    -webkit-transform-origin: 0% 100%;
+            transform-origin: 0% 100%;
+    opacity: 1;
+  }
+}
+
+.scale-in-ver-bottom {
+	-webkit-animation: scale-in-ver-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-ver-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes scale-in-ver-bottom {
+  0% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    -webkit-transform-origin: 0% 100%;
+            transform-origin: 0% 100%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    -webkit-transform-origin: 0% 100%;
+            transform-origin: 0% 100%;
+    opacity: 1;
+  }
+}
+
+.text-us-choice{
+  //font-style: italic;
+  font-size: 1.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  strong{
+    color: $colorblue;
   }
 }
