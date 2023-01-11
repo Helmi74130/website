@@ -48,7 +48,7 @@ $colorblue : #1836b2;
   }
   .title{
     color: #504d52;
-    font-size: calc(2.5vw + 2.5vh + 2vmin);
+    font-size: 4em;
     font-family: 'steroniteregular';
     span{
       color: $colorblue;
@@ -65,14 +65,16 @@ $colorblue : #1836b2;
     font-family: 'aerosregular';
     color: white;
     border: 2px solid white;
+    svg{
+      height: 30px;
+      width: 30px;
+    } 
   }
 }
 main{
   background: #f5f5f5;
 }
 .description{
-  height: 100vh;
-
     .background-circle{
       height: 50px;
       width: 50px;
@@ -90,7 +92,6 @@ main{
 
 .accompanied{
   background: rgb(255, 255, 255);
-  height: 100vh;
   h4{
     opacity: 0;
   }
@@ -239,6 +240,7 @@ form{
     &:hover{
       transform: scale('1.2');
     }
+    
   }
 }
 
@@ -249,12 +251,13 @@ footer{
   }
   .copyright{
     font-family: 'steroniteregular';
-    color: #a066cb;
+    /* color: $colorblue; */
     font-size: 1.2em;
   }
 }
 
 .tchat{
+  z-index: 10;
   position: fixed;
   overflow-y: auto;
   overflow-x: hidden;
@@ -308,9 +311,9 @@ footer{
 }
 
 .icone-message{
-  z-index: 10;
+  //z-index: 10;
   position: fixed;
-  bottom: 20px;
+  bottom: 50px;
   right: 20px;
   color: $colorblue;
   &:hover{
@@ -616,7 +619,6 @@ footer{
 }
 
 .text-us-choice{
-  //font-style: italic;
   font-size: 1.3em;
   font-family: Arial, Helvetica, sans-serif;
   strong{
@@ -628,5 +630,63 @@ footer{
   &:hover{
     transition: 0.3s;
     transform: rotate(-10deg);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .content-navlink{
+    font-size: 0.8em;
+  }
+  .viewport-section{
+    .title{
+      font-size: 3em;
+    }
+    .btn-contact{
+      font-size: 0.7em;
+      svg{
+        height: 20px;
+        width: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .content-navlink{
+    font-size: 0.6em;
+  }
+  .viewport-section{
+    header .text-logo{
+      font-size: 0.8em;
+    }
+    .logo{
+      height: 50px;
+    }
+    .title{
+      font-size: 2.5em;
+    }
+    .content-viewport{
+      margin-top: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content-navlink{
+    font-size: 0.6em;
+  }
+  .viewport-section{
+    header .text-logo{
+      font-size: 0.8em;
+    }
+    .logo{
+      height: 50px;
+    }
+    .title{
+      font-size: 2.5em;
+    }
+    .content-viewport{
+      margin-top: 100px;
+    }
   }
 }

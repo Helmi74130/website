@@ -20,48 +20,49 @@
     <p class="text-background top-text-background  kenburns-top">WEB DESIGN</p>
     <p class="text-background bottom-text-background">DÉVELOPPEMENT</p>
     <!-- HEADER START -->
-    <header class="pt-3 pt-sm-5 fs-3">
+    <header class="pt-3 pt-md-5 fs-3">
       <div class="row gx-0">
-        <div class="col-12 col-sm-3 d-flex justify-content-center">
-          <a class="nav-link fs-1-m text-logo" href="/"><img height="80px" src="/img/logo.webp" alt="logo de l'entreprise">My website</a>
+        <div class="col-12 col-md-3 d-flex justify-content-center">
+          <a class="nav-link fs-1-m text-logo" href="/"><img class="logo" height="80px" src="/img/logo.webp" alt="logo de l'entreprise">My website</a>
         </div>
-        <div class="col-12 col-sm-8 d-flex justify-content-center justify-content-sm-end ">
-          <div>
-            <a class="nav-link me-3 link-nav" href="#">Accueil</a>
+        <div class="content-navlink col-12 col-md-8 d-flex justify-content-center justify-content-md-end">
+          <div class="d-flex justify-content-center align-items-center">
+            <a class="nav-link me-3 link-nav" href="/">Accueil</a>
           </div>
-          <div>
-            <a class="nav-link me-3 link-nav" href="#">Réalisation</a>
+          <div class="d-flex justify-content-center align-items-center">
+            <a class="nav-link me-3 link-nav" href="#make">Réalisation</a>
           </div>
-          <div>
-            <a class="nav-link me-3 link-nav" href="#">Contact</a>
+          <div class="d-flex justify-content-center align-items-center">
+            <a class="nav-link me-3 link-nav" href="#contact">Contact</a>
           </div>
-          <div>
-            <a class="nav-link me-3 link-nav" href="#">Tarifs</a>
+          <div class="d-flex justify-content-center align-items-center">
+            <a class="nav-link me-3 link-nav" href="#price">Tarifs</a>
           </div>
-          <div>
-            <a class="nav-link link-nav" href="#">FAQ</a>
+          <div class="d-flex justify-content-center align-items-center">
+            <a class="nav-link link-nav" href="#faq">FAQ</a>
           </div>
         </div>
       </div>
     </header>
 
     <!-- SECTION START -->
-    <section class="container-fluid">
-      <div class="row gx-0">
-        <div class="col-6 d-flex flex-column align-items-center justify-content-center">
+    <section class="content-viewport container-fluid ">
+      <div class="row gx-0 justify-content-center justify-content-md-around">
+        <div class="col-10 col-md-6 d-flex flex-column align-items-center justify-content-center">
           <h1 class="title text-center"><span>CONCEPTION</span> DE SITE WEB SUR MESURE</h1>
           <p class="sub-title text-light">BOOSTER VOTRE VISIBILITÉ </p>
           <div>
-            <button class="btn-contact mt-3">Contactez-nous <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="none" viewBox="0 0 24 24">
+            <a href="#contact" class="btn btn-contact mt-3 d-flex">Contactez-nous 
+              <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="none" viewBox="0 0 24 24">
               <g class="send">
                 <path  stroke="#FFFFFF" stroke-linecap="round" stroke-width="1.5" d="M9.407 14.593l3.058-3.058"/>
                 <path stroke="#FFFFFF" stroke-width="1.5" d="M15.564 7.908a.432.432 0 01.528.528l-2.677 10.175a.432.432 0 01-.724.195L5.194 11.31a.432.432 0 01.195-.724l10.175-2.677z"/>
               </g>
               </svg>
-              </button>
+            </a>
           </div>
         </div>
-        <div class="col-6 d-flex justify-content-center align-items-center">
+        <div class="img-principal d-none d-md-flex col-md-6 justify-content-center align-items-center ">
           <img src="/img/smartphone5.webp" alt="image de téléphone" class="img-fluid  ">
         </div>
       </div>
@@ -70,7 +71,7 @@
 
   <!-- MAIN START -->
   <main>
-    <section class="container description d-flex flex-column justify-content-center align-items-center">
+    <section class="container description d-flex flex-column justify-content-center align-items-center pt-5">
       <h2 id="titleDemarqued" class="text-center subhead">DÉMARQUEZVOUS</h2>
 
       <div class="row justify-content-between gx-0 pt-5 pb-5">
@@ -142,7 +143,7 @@
       </article>
     </section>
     <!-- SECTION Realisation-->
-    <section class="making d-flex flex-column justify-content-center align-items-center">
+    <section id="make" class="making d-flex flex-column justify-content-center align-items-center">
       <h6 class="subhead text-center pb-5">DÉCOUVREZ NOS RÉALISATIONS</h6>
       <div class="container">
         <div class="row gx-0 pt-5">
@@ -172,10 +173,10 @@
     </section>
 
     <!-- WORK WITH US -->
-    <section>
+    <section class="pt-5">
       <h6 class="subhead text-center">POURQUOI NOUS?</h6>
       <article class="container">
-        <div class="row d-flex justify-content-between gx-0 mt-5">
+        <div class="row d-flex justify-content-between gx-0 mt-3">
           <div class="col-7 p-5">
             <p class=" text-us-choice lh-3">
               Contrairement à de nombreux concurrents qui utilisent des CMS tels que WordPress, nous sommes expert en développement <strong>web pur</strong> afin de coder chaque aspect d'un site web à partir de zéro. Cela signifie que vous obtenez un site web qui est totalement <strong>unique</strong> et qui répond parfaitement à vos besoins, sans aucune limitation imposée par un système de gestion de contenu préconstruit.
@@ -191,8 +192,8 @@
     </section>
 
     <!-- Tarifs -->
-    <section>
-      <h6 class="subhead text-center">NOS TARIFS</h6>
+    <section id="price">
+      <h6 class="subhead text-center pt-5">NOS TARIFS</h6>
       <article class="container">
         <div class="row d-flex justify-content-between gx-0 mt-5">
           <div class="col-5">
@@ -226,8 +227,9 @@
       </article>
     </section>
     <!-- FORM START -->
-    <form action="">
-      <div class="container form-container p-5">
+    <section class=" p-5" id="contact">
+      <h6 class="subhead text-center">NOUS CONTACTER</h6>
+      <form action="" class="container form-container p-5 mt-5">
         <section class="row">
           <div class="col-6">
             <img class="img-fluid img-phone-contact" src="/img/contact.png" alt="image d'un téléphone">
@@ -271,12 +273,12 @@
             </div>
           </div>
         </section>
-      </div>
-    </form>
+      </form>
+    </section>
 
     <!-- FAQ-->
 
-    <section class="faq pt-5">
+    <section id="faq" class="faq pt-5">
       <h6 class="subhead text-center pt-5">FAQ</h6>
       <article class="container pt-5">
         <div class="row gx-0">
@@ -460,7 +462,7 @@
                             </p>
                             <div class="collapse multi-collapse" id="multiCollapse8">
                               <div class="card card-body bg-grey text-dark">
-                                Nous comprenons que les projets de sites web peuvent représenter un investissement important pour certains de nos clients, c'est pourquoi nous proposons la possibilité de régler les factures en plusieurs fois, sans frais supplémentaires.
+                                Nous comprenons que les projets de sites web peuvent représenter un investissement pour certains de nos clients, c'est pourquoi nous proposons la possibilité de régler les factures en plusieurs fois, sans frais supplémentaires.
                                 Vous pouvez désormais régler votre facture pour la conception de votre site web en 3 fois, sans aucun coût supplémentaire. Cette option vous permet de répartir le coût total sur plusieurs mois, ce qui peut vous aider à gérer votre budget de manière plus flexible.
                                 Il est important de noter que cette option n'est disponible que pour les factures réglées par carte bancaire ou virement bancaire. Si vous souhaitez en bénéficier, merci de nous en faire la demande lors de la signature de votre contrat ou avant le paiement final.
                                 N'hésitez pas à nous contacter si vous avez des questions ou des préoccupations concernant les modalités de paiement. Nous sommes là pour vous aider à trouver la solution qui conviendra le mieux à vos besoins.
@@ -477,7 +479,7 @@
                       <div class="col-12">
                         <div class="card bg-blue">
                           <div class="card-body">
-                            <h5 class="card-title">NABIL ALAMI</h5>
+                            <h5 class="card-title">BAYANI ASNEE</h5>
                             <p class="card-text pt-2">Pourquoi vos prix sont uniquement sur devis ?</p>
                             <p class="text-end pe-5 ">
                               <a data-bs-toggle="collapse" href="#multiCollapse9" role="button" aria-expanded="false" aria-controls="multiCollapse9"><svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" fill="currentColor" class="bi bi-patch-question-fill togle-btn" viewBox="0 0 16 16">
@@ -514,20 +516,27 @@
         <h6 class="pt-3">Une idée? Nous avons les compétences</h6>
         <p>Confiez-nous votre projet nous le ferons décoller</p>
         <div>
-          <button class="btn btn-primary">Contact</button>
+          <a href="#contact" class="btn btn-primary">Contact</a>
         </div>
       </div>
     </section>
     <hr>
     <section class="row gx-0">
       <div class="col-6 d-flex">
-        <a href="" class="me-2 copyright">2023 My website.</a> 
-        <span>All rights reserved.</span>
+        <p href="" class="me-2 copyright text-primary">2023 My website.</p> 
+        <!-- <span>All rights reserved.</span> -->
       </div>
       <div class="col-6 text-end">
-        <a href="">Devis</a>
-        <a href="">Devis</a>
-        <a href="">Devis</a>
+        <a class="me-3" target="_blank" href="https://api.whatsapp.com/send?text=Bonjour je vous contact car je souhaiterais réaliser...&phone=33783134458">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-whatsapp text-success" viewBox="0 0 16 16">
+          <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+          </svg>
+        </a>
+        <a class="me-3" target="_blank" href="https://telegram.me/Mywebsite_fr">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-telegram text-info" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/>
+          </svg>
+        </a>
       </div>
     </section>
   </footer>
