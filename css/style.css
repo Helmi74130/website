@@ -1,3 +1,7 @@
+body {
+  position: relative;
+}
+
 .viewport-section {
   overflow: hidden;
   position: relative;
@@ -212,6 +216,10 @@ form .btn-form {
   background: #1836B2;
 }
 
+form .subtitle-contact-form {
+  font-size: 1.25rem;
+}
+
 .faq {
   background: white;
 }
@@ -272,6 +280,7 @@ form .btn-form {
 .contact .title-contact {
   font-weight: bolder;
   font-family: 'aerosregular';
+  font-size: calc(1.375rem + 1.5vw);
 }
 
 .contact .btn-contact {
@@ -364,7 +373,6 @@ footer .copyright {
   position: fixed;
   bottom: 50px;
   right: 20px;
-  color: #1836b2;
 }
 
 .icone-message:hover {
@@ -858,6 +866,9 @@ footer .copyright {
   .text-us-choice {
     font-size: 1.1em;
   }
+  .contact .title-contact {
+    font-size: 1.5em;
+  }
 }
 
 @media screen and (max-width: 530px) {
@@ -874,6 +885,9 @@ footer .copyright {
     height: 80px;
     width: 80px;
   }
+  form .subtitle-contact-form {
+    font-size: 1em;
+  }
 }
 
 @media screen and (max-width: 490px) {
@@ -885,6 +899,35 @@ footer .copyright {
   }
   .text-us-choice {
     font-size: 1em;
+  }
+  .contact .title-contact {
+    font-size: 1.4em;
+  }
+  .footer-title {
+    font-size: 1em;
+  }
+  .content-navlink {
+    font-size: 0.5em;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .contact .title-contact {
+    font-size: 1.2em;
+  }
+  .contact .subtitle-contact {
+    font-size: 0.8em;
+  }
+  .footer-title {
+    font-size: 0.9em;
+  }
+  .content-navlink {
+    font-size: 0.4em;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .icone-message img {
+    height: 35px;
   }
 }
 /*# sourceMappingURL=style.css.map */
