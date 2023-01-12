@@ -827,6 +827,9 @@ footer .copyright {
     height: 20px;
     width: 20px;
   }
+  .tchat {
+    width: 40vw;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -869,6 +872,9 @@ footer .copyright {
   .contact .title-contact {
     font-size: 1.5em;
   }
+  .tchat {
+    width: 55vw;
+  }
 }
 
 @media screen and (max-width: 530px) {
@@ -887,6 +893,9 @@ footer .copyright {
   }
   form .subtitle-contact-form {
     font-size: 1em;
+  }
+  .tchat {
+    width: 70vw;
   }
 }
 
@@ -909,6 +918,9 @@ footer .copyright {
   .content-navlink {
     font-size: 0.5em;
   }
+  .tchat {
+    width: 80vw;
+  }
 }
 
 @media screen and (max-width: 390px) {
@@ -928,6 +940,9 @@ footer .copyright {
   }
   .icone-message img {
     height: 35px;
+  }
+  .tchat {
+    right: 5px;
   }
 }
 /*# sourceMappingURL=style.css.map */
