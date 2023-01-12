@@ -76,7 +76,12 @@ body{
     svg{
       height: 30px;
       width: 30px;
-    } 
+    }
+    &:hover{
+      opacity: 0.9;
+      background: $colorblue;
+      color: white;
+    }
   }
 }
 main{

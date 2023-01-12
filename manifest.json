@@ -1,0 +1,14 @@
+{
+  "short_name": "My website",
+  "name": "My website, conception de site web sur mesure",
+  "icons": [
+    {
+      "src": "/img/logo.webp",
+      "type": "image/svg+xml",
+      "sizes": "512x512"
+    }
+  ],
+  "theme_color": "#317EFB",
+  "url": "/",
+  "start_url": "/"
+}

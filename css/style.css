@@ -94,6 +94,12 @@ body {
   width: 30px;
 }
 
+.viewport-section .btn-contact:hover {
+  opacity: 0.9;
+  background: #1836b2;
+  color: white;
+}
+
 main {
   background: #f5f5f5;
 }
