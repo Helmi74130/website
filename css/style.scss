@@ -14,6 +14,9 @@ body{
   background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   height: 100vh;
   z-index: 1;
+  .content-viewport{
+    height: 100%;
+  }
   .text-background{
     position: absolute;
     font-size: calc(6vw + 6vh + 2vmin);
@@ -127,7 +130,7 @@ main{
     }
     .bg-arrow{
       margin-left: 10px;
-      background-image: url("/img/arrow.png");
+      background-image: url("/img/arrow.webp");
       background-size: contain;
       background-repeat: no-repeat;
       margin-bottom: 25px;
@@ -139,7 +142,7 @@ main{
       margin-left: 25%;
     }
     .arrow-2{
-      background-image: url("/img/arrow2.png");
+      background-image: url("/img/arrow2.webp");
       transform: rotate(200deg);
     }
     .container-img-3{
@@ -230,7 +233,7 @@ form{
 .contact{
   background: white;
   .bg-desktop{
-    background-image: url('/img/desktop1.png');
+    background-image: url('/img/desktop1.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -441,8 +444,8 @@ footer{
 }
 
 .bounce-out-top {
-	-webkit-animation: bounce-out-top 2s both;
-	        animation: bounce-out-top 2s both;
+	-webkit-animation: bounce-out-top 3.5s both;
+	        animation: bounce-out-top 3.5s both;
 }
 
 
