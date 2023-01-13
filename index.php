@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Venez gouter les saveurs exquis de nos plats, notre restaurant se veut être moderne et soigné, une cuisine gastronomique francaise haut de gamme ou chaque bouchée vous offre des saveurs inoubliable.">
+  <meta name="description" content="Transformez votre vision en réalité avec nos sites web sur mesure conçus pour répondre à vos besoins uniques et propulser votre entreprise vers le succès.">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="/bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="/fonts/stylesheet.css">
