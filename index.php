@@ -28,7 +28,7 @@
         <div class="col-12 col-md-3 d-flex justify-content-center">
           <a class="nav-link fs-1-m text-logo" href="/"><img class="logo" height="80px" src="/img/logo.webp" alt="logo de l'entreprise">My website</a>
         </div>
-        <div class="content-navlink col-12 col-md-8 d-flex justify-content-center justify-content-md-end">
+        <div class="content-navlink col-12 col-md-8 d-flex justify-content-center justify-content-md-end mt-3 mt-md-0">
           <div class="d-flex justify-content-center align-items-center">
             <a class="nav-link me-3 link-nav" href="/">Accueil</a>
           </div>
