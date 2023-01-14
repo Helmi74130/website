@@ -16,12 +16,17 @@
   <meta name="theme-color" content="#317EFB"/>
   <title>My website</title>
 </head>
-<body class="body">
 
+
+
+<body class="body">
+  <?php
+    require_once "php/database.php";
+
+  ?>
   <div class="viewport-section">
     <p class="text-background top-text-background  kenburns-top">WEB DESIGN</p>
     <p class="text-background bottom-text-background">DÉVELOPPEMENT</p>
-
     <!-- HEADER START -->
     <header class="pt-3 pt-md-5 fs-3">
       <div class="row gx-0">
@@ -75,7 +80,7 @@
   <!-- MAIN START -->
   <main>
     <section class="container gx-0 description d-flex flex-column justify-content-center align-items-center pt-5">
-      <h2 id="titleDemarqued" class="text-center subhead">DÉMARQUEZVOUS</h2>
+      <h2 id="titleDemarqued" class="text-center subhead">DÉMARQUEZ VOUS <?= $piou ?></h2>
       <div class="row justify-content-between gx-0 pt-5 pb-5 p-3 p-sm-0">
         <div class="col-12 col-md-6 col-xl-3 d-flex flex-column justify-content-between">
           <article data-aos="fade-down" data-aos-delay="300" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom">
@@ -161,7 +166,7 @@
                   <li class="splide__slide"><a target="_blank" href="https://helmi-elmaiel-portfolio.fr/"><img class="img-fluid" src="/img/realisation/portfolio.webp" alt="Image réalisation site de web"></a></li>
                   <li class="splide__slide"><a target="_blank" href="https://earth-and-sea.helmi-elmaiel-portfolio.fr/"><img class="img-fluid" src="/img/realisation/earth.webp" alt="Image réalisation site de web"></a></li>
                   <li class="splide__slide"><a target="_blank" href="https://meteo-france.helmi-elmaiel-portfolio.fr/"><img class="img-fluid" src="/img/realisation/meteo.webp" alt="Image réalisation site de web"></a></li>
-                  <li class="splide__slide"><a target="_blank" href="https://richards-immo.online/"><img class="img-fluid" src="/img/realisation/orangebleu.webp" alt="Image réalisation site de web"></a></li>
+                  <li class="splide__slide"><a target="_blank" href="https://orange-myapps.online/"><img class="img-fluid" src="/img/realisation/orangebleu.webp" alt="Image réalisation site de web"></a></li>
                 </ul>
               </div>
             </section>
