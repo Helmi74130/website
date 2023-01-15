@@ -162,7 +162,7 @@
                   <li class="splide__slide"><a target="_blank" href="https://illustre-restaurant.helmi-elmaiel-portfolio.fr/"><img class="img-fluid" src="/img/realisation/illustre.webp" alt="Image réalisation site de web"></a></li>
                   <li class="splide__slide"><a target="_blank" href="https://richards-immo.online/"><img class="img-fluid" src="/img/realisation/richard.webp" alt="Image réalisation site de web"></a></li>
                   <li class="splide__slide"><a target="_blank" href="https://nike-air-max.richards-immo.online/"><img class="img-fluid" src="/img/realisation/nike.webp" alt="Image réalisation site de web"></a></li>
-                  <li class="splide__slide"><a target="_blank" href="https://shampoo-performance.helmi-elmaiel-portfolio.fr/"><img class="img-fluid" src="/img/realisation/shampoo.webp" alt="Image réalisation site de web"></a></li>
+                  <li class="splide__slide"><a target="_blank" href="https://shampoo-performance.e-website.fr/"><img class="img-fluid" src="/img/realisation/shampoo.webp" alt="Image réalisation site de web"></a></li>
                   <li class="splide__slide"><a target="_blank" href="https://helmi-elmaiel-portfolio.fr/"><img class="img-fluid" src="/img/realisation/portfolio.webp" alt="Image réalisation site de web"></a></li>
                   <li class="splide__slide"><a target="_blank" href="https://earth-and-sea.helmi-elmaiel-portfolio.fr/"><img class="img-fluid" src="/img/realisation/earth.webp" alt="Image réalisation site de web"></a></li>
                   <li class="splide__slide"><a target="_blank" href="https://meteo-france.helmi-elmaiel-portfolio.fr/"><img class="img-fluid" src="/img/realisation/meteo.webp" alt="Image réalisation site de web"></a></li>
