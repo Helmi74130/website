@@ -21,7 +21,7 @@
 
 <body class="body">
   <?php
-    require_once "php/database.php";
+    /* require_once "php/database.php"; */
 
   ?>
   <div class="viewport-section">
