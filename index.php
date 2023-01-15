@@ -80,7 +80,7 @@
   <!-- MAIN START -->
   <main>
     <section class="container gx-0 description d-flex flex-column justify-content-center align-items-center pt-5">
-      <h2 id="titleDemarqued" class="text-center subhead">DÉMARQUEZ VOUS <?= $piou ?></h2>
+      <h2 id="titleDemarqued" class="text-center subhead">DÉMARQUEZ VOUS</h2>
       <div class="row justify-content-between gx-0 pt-5 pb-5 p-3 p-sm-0">
         <div class="col-12 col-md-6 col-xl-3 d-flex flex-column justify-content-between">
           <article data-aos="fade-down" data-aos-delay="300" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom">
