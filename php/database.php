@@ -1,7 +1,5 @@
 <?php
 
-$piou = 'piouuuuuuuuuuuuuuuuuu';
-
 $user ='root';
 $pass = "";
 
@@ -11,4 +9,7 @@ try {
 } catch (PDOException $e) {
   print "erreur :" . $e->getMessage() . "<br/>";
   die;
+  //En cas de mise en production décommenter
+  //echo "impossible de se connecter à la base de donnée";
 }
+
