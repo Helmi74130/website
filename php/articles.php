@@ -24,16 +24,18 @@ $articles = $requete->fetchAll();
 
 <section class="mt-5">
   <div class="container">
-    <div class="row">
+    <h1>Les derniers articles</h1>
+    <div class="row mt-3">
       <?php foreach($articles as $article): ?>
-        <div class="col-4">
+        <div class="col-4 d-flex justify-content-center mt-5">
           <div class="card" style="width: 18rem;">
-            <img src="<?= strip_tags($article["img"]) ?>" class="card-img-top" alt="...">
+            <img height="200px" src="/img/database/<?= strip_tags($article["img"]) ?>" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title"><?= strip_tags($article["title"])  ?></h5>
-              <p class="card-text"><?= strip_tags($article["texte"]) ?>.</p>
-              <p><?= strip_tags($article["created_at"]) ?></p>
-              <a href="article.php?id=<?= $article["id"] ?>" class="btn btn-primary">Consulter</a>
+              <p class="card-text text-truncate"><?= strip_tags($article["texte"]) ?>.</p>
+            </div>
+            <div>
+              <a class="btn btn-primary m-3" href="article.php?id=<?= $article["id"] ?>">Consulter</a>
             </div>
           </div>
         </div>

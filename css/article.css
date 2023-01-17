@@ -1,0 +1,83 @@
+header {
+  font-family: 'steroniteregular';
+  color: #504d52;
+}
+
+header .text-logo {
+  color: #1836b2;
+}
+
+header .link-nav {
+  font-family: 'aerosregular';
+  font-size: 0.8em;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  padding: 5px;
+}
+
+header .link-nav:hover {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  background: #1836b2;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+footer h6 {
+  font-family: 'aerosregular';
+  font-size: 1.5em;
+}
+
+footer .copyright {
+  font-family: 'steroniteregular';
+  font-size: 1.2em;
+}
+
+.img-principal{
+  max-height: 600px;
+  min-height: 400px;
+  /* border: 3px solid #222224; */
+}
+
+.text-article{
+  font-size: 1.5em;
+}
+
+h1{
+  font-family: 'aerosregular';
+  font-size: 1.8em;
+}
+
+@media screen and (max-width: 900px) {
+  .content-navlink {
+    font-size: 0.6em;
+  }
+  .viewport-section header .text-logo {
+    font-size: 0.8em;
+  }
+  .viewport-section .logo {
+    height: 50px;
+  }
+  .viewport-section .title {
+    font-size: 2.5em;
+  }
+  .viewport-section .content-viewport {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .viewport-section header .text-logo {
+    font-size: 0.8em;
+  }
+  .viewport-section .logo {
+    height: 50px;
+  }
+  .viewport-section .title {
+    font-size: 2.5em;
+  }
+  .viewport-section .content-viewport {
+    margin-top: 100px;
+  }
+}
