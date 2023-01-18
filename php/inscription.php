@@ -11,7 +11,9 @@
 </head>
 <body>
   <?php 
-    require_once "header.php"; 
+    require_once "header.php";
+
+    $incompleteForm = null;
 
     if(!empty($_POST)){
 
@@ -21,7 +23,8 @@
         $name = strip_tags($_POST["name"]);
 
         if (!filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)) {
-          die("Adresse mail incorect");
+          echo '<div class="alert alert-danger text-center" role="alert">Votre adresse mail n\'est pas valide!</div>';
+          die;
         };
 
         $password = password_hash($_POST["password"], PASSWORD_ARGON2ID);
@@ -54,16 +57,13 @@
         ];
  
         //On redirige l'utilisateur
-        header("location: ../index.php");
-
+        header("location: profil.php");
+        $incompleteForm = null;
       }else {
-        die('Le formulaire est incomplet');
+        echo '<div class="alert alert-danger text-center" role="alert">Votre formulaire est incomplet!</div>';
       };
     };
-
-  
   ?>
-
 
   
   <form class="container mt-5" method="post">
@@ -76,7 +76,7 @@
         </div>
         <div class="mb-3">
           <label for="email" class="form-label">E-mail</label>
-          <input name="email" type="mail" class="form-control" id="email" placeholder="E-mail">
+          <input name="texte" type="email" class="form-control" id="email" placeholder="E-mail">
         </div>
         <div class="mb-3">
           <label for="password" class="form-label">Mot de passe</label>

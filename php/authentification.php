@@ -49,9 +49,9 @@
           "email" => $user["email"],
           "role" => $user["roles"]
         ];
-
+      var_dump($_SESSION);
         //On redirige l'utilisateur
-        header("location: ../index.php");
+        header("location: profil.php");
 
 
       }else {
