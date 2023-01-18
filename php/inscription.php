@@ -24,15 +24,41 @@
           die("Adresse mail incorect");
         };
 
-
         $password = password_hash($_POST["password"], PASSWORD_ARGON2ID);
 
-        die($password);
+        require_once "database.php";
+
+        $sql = "INSERT INTO users (name, email, password) VALUES (:name, :email, :password)";
+
+        $query = $db->prepare($sql);
+      
+        $query->bindValue(":name", $name, PDO::PARAM_STR);
+        $query->bindValue(":email", $email, PDO::PARAM_STR);
+        $query->bindValue(":password", $password, PDO::PARAM_STR);
+      
+        if (!$query->execute()) {
+          die("Une erreur est survenue");
+        }
+
+        //On récupère l'id de l'utilisateur courant
+        $id = $db->lastInsertId();
+
+        //On démarre la session PHP
+        session_start();
+        //On stock les infos de l'user
+        $_SESSION["user"] = [
+           "id" => $id,
+           "name" => $name,
+           "email" => $email,
+           "role" => ["ROLE_USER"]
+        ];
+ 
+        //On redirige l'utilisateur
+        header("location: ../index.php");
 
       }else {
         die('Le formulaire est incomplet');
       };
-
     };
 
   

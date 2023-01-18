@@ -15,7 +15,7 @@
 
 
 if(!empty($_POST)){
-  /* var_dump($_POST); */
+
 
   if (isset($_POST['title'], $_POST["img"], $_POST["texte"]) && !empty($_POST["title"]) && !empty($_POST["img"]) && !empty($_POST["texte"])) {
     $title = strip_tags($_POST['title']);

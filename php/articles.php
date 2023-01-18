@@ -15,11 +15,11 @@
   require_once 'header.php';
   require_once "database.php";
 
-$sql = "SELECT * FROM `articles` ORDER BY `created_at` DESC";
+  $sql = "SELECT * FROM `articles` ORDER BY `created_at` DESC";
 
-$requete = $db->query($sql);
+  $requete = $db->query($sql);
 
-$articles = $requete->fetchAll();
+  $articles = $requete->fetchAll();
 ?>
 
 <section class="mt-5">
