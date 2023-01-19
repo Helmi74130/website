@@ -36,7 +36,7 @@ $article = $requete->fetch();
 
 if (!$article) {
   http_response_code(404);
-  echo "article inexistant";
+  echo '<div class="alert alert-danger" role="alert">Article inexistant!</div>';
   exit;
 }
 

@@ -9,19 +9,19 @@
             <a class="nav-link me-3 link-nav" href="/">Accueil</a>
           </div>
           <div class="d-flex justify-content-center align-items-center">
-            <a class="nav-link me-3 link-nav" href="#make">Réalisation</a>
+            <a class="nav-link me-3 link-nav" href="/index.php#make">Réalisation</a>
           </div>
           <div class="d-flex justify-content-center align-items-center">
-            <a class="nav-link me-3 link-nav" href="#contact">Contact</a>
+            <a class="nav-link me-3 link-nav" href="/index.php#contact">Contact</a>
           </div>
           <div class="d-flex justify-content-center align-items-center">
-            <a class="nav-link me-3 link-nav" href="#price">Tarifs</a>
+            <a class="nav-link me-3 link-nav" href="/index.php#price">Tarifs</a>
           </div>
           <div class="d-flex justify-content-center align-items-center">
             <a class="nav-link me-3 link-nav" href="/php/articles.php">Articles</a>
           </div>
           <div class="d-flex justify-content-center align-items-center">
-            <a class="nav-link link-nav" href="#faq">FAQ</a>
+            <a class="nav-link link-nav" href="/index.php#faq">FAQ</a>
           </div>
           <?php
             if (isset($_SESSION["user"])) {
@@ -32,4 +32,4 @@
           ?>
         </div>
       </div>
-    </header>
+</header>

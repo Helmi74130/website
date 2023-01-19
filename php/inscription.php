@@ -61,7 +61,7 @@
            "id" => $id,
            "name" => $name,
            "email" => $email,
-           "role" => ["ROLE_USER"]
+           "role" => "ROLE_USER"
         ];
  
         //On redirige l'utilisateur
@@ -83,7 +83,7 @@
         </div>
         <div class="mb-3">
           <label for="email" class="form-label">E-mail</label>
-          <input name="texte" type="email" class="form-control" id="email" placeholder="E-mail">
+          <input name="email" type="email" class="form-control" id="email" placeholder="E-mail">
         </div>
         <div class="mb-3">
           <label for="password" class="form-label">Mot de passe</label>

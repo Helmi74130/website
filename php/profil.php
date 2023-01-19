@@ -16,9 +16,18 @@
     require_once "header.php"; 
   ?>
 
-  <h1>Bonjour <?= $_SESSION["user"]["name"] ?></h1>
+  <h1 class="m-5">Bonjour <?= $_SESSION["user"]["name"] ?></h1>
 
-  <p>Votre adresse mail: <?= $_SESSION["user"]["email"] ?></p>
+  <main class="container mt-5">
+  <div class="row">
+    <div class="col-10 col-md-6">
+      <img class="img-fluid" src="/img/accompagne.webp" alt="Image principal">
+    </div>
+    <div class="col-10 col-md-6 text-center">
+      <h2>J'espère que vous passez une bonne journée !</h2>
+    </div>
+  </div>
+  </main>
 
 
 
