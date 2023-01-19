@@ -1,3 +1,4 @@
+<?php session_start() ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,11 +37,11 @@ if(!empty($_POST)){
     }
     
     $id = $db->lastInsertId();
-  
-    die("Article ajouté sous le numéro ".$id."");
+
+    echo '<div class="alert alert-success" role="alert">Article ajouté avec succès</div>';
   
   }else{
-    die("le formulaire est incomplet");
+    echo '<div class="alert alert-danger text-center" role="alert">Le formulaire est incomplet</div>';
   }
 
 }

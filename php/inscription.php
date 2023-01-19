@@ -1,3 +1,13 @@
+<?php 
+  session_start();
+
+  //Vérifie si l'utilisateur est connecté
+  if (isset($_SESSION["user"])) {
+    header("location: profil.php");
+    exit;
+  };
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -12,8 +22,6 @@
 <body>
   <?php 
     require_once "header.php";
-
-    $incompleteForm = null;
 
     if(!empty($_POST)){
 
@@ -47,7 +55,7 @@
         $id = $db->lastInsertId();
 
         //On démarre la session PHP
-        session_start();
+        
         //On stock les infos de l'user
         $_SESSION["user"] = [
            "id" => $id,
@@ -58,7 +66,6 @@
  
         //On redirige l'utilisateur
         header("location: profil.php");
-        $incompleteForm = null;
       }else {
         echo '<div class="alert alert-danger text-center" role="alert">Votre formulaire est incomplet!</div>';
       };

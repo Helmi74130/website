@@ -1,3 +1,4 @@
+<?php @session_start() ?>
 <header class="pt-3 pt-md-5 fs-3">
       <div class="row gx-0">
         <div class="col-12 col-md-3 d-flex justify-content-center">
@@ -22,6 +23,13 @@
           <div class="d-flex justify-content-center align-items-center">
             <a class="nav-link link-nav" href="#faq">FAQ</a>
           </div>
+          <?php
+            if (isset($_SESSION["user"])) {
+            echo '<div class="d-flex justify-content-center align-items-center">
+                    <a class="nav-link link-nav" href="/php/deconnexion.php">Déconnexion</a>
+                  </div>';
+            }
+          ?>
         </div>
       </div>
     </header>

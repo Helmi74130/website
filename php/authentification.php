@@ -1,3 +1,13 @@
+<?php 
+  session_start();
+
+  //Vérifie si l'utilisateur est connecté
+  if (isset($_SESSION["user"])) {
+    header("location: profil.php");
+    exit;
+  };
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -49,7 +59,6 @@
           "email" => $user["email"],
           "role" => $user["roles"]
         ];
-      var_dump($_SESSION);
         //On redirige l'utilisateur
         header("location: profil.php");
 
