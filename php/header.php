@@ -8,21 +8,28 @@
           <div class="d-flex justify-content-center align-items-center">
             <a class="nav-link me-3 link-nav" href="/">Accueil</a>
           </div>
+
+          <?php
+            if (!isset($_SESSION["user"])) {
+            echo '
+            <div class="d-flex justify-content-center align-items-center">
+              <a class="nav-link me-sm-3 me-1 link-nav" href="/index.php#make">Réalisation</a>
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+              <a class="nav-link me-sm-3 me-1 link-nav" href="/index.php#contact">Contact</a>
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+              <a class="nav-link me-sm-3 me-1 link-nav" href="/index.php#price">Tarifs</a>
+            </div>';
+            }
+          ?>
+          
           <div class="d-flex justify-content-center align-items-center">
-            <a class="nav-link me-3 link-nav" href="/index.php#make">Réalisation</a>
+            <a class="nav-link me-sm-3 me-1 link-nav" href="/php/articles.php">Articles</a>
           </div>
-          <div class="d-flex justify-content-center align-items-center">
-            <a class="nav-link me-3 link-nav" href="/index.php#contact">Contact</a>
-          </div>
-          <div class="d-flex justify-content-center align-items-center">
-            <a class="nav-link me-3 link-nav" href="/index.php#price">Tarifs</a>
-          </div>
-          <div class="d-flex justify-content-center align-items-center">
-            <a class="nav-link me-3 link-nav" href="/php/articles.php">Articles</a>
-          </div>
-          <div class="d-flex justify-content-center align-items-center">
+          <!-- <div class="d-flex justify-content-center align-items-center">
             <a class="nav-link link-nav" href="/index.php#faq">FAQ</a>
-          </div>
+          </div> -->
           <?php
             if (isset($_SESSION["user"])) {
             echo '<div class="d-flex justify-content-center align-items-center">

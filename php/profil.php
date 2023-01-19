@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="/bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="/fonts/stylesheet.css">
   <link rel="stylesheet" href="/css/articles.css">
-  <title>Connexion</title>
+  <title>Mon profil</title>
 </head>
 <body>
   <?php 

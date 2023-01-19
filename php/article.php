@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="/bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="/fonts/stylesheet.css">
   <link rel="stylesheet" href="/css/article.css">
-  <title>Document</title>
+  <title>Article</title>
 </head>
 <body>
 <?php
@@ -51,12 +51,11 @@ $articles = $requeteAll->fetchAll();
 
 <main class="container mt-5">
   <section class="row justify-content-between">
-    <div class="col-8 d-flex justify-content-center">
+    <div class="col-lg-8 col-12 d-flex justify-content-center">
       <div>
-        <h1 class="text-center"><?= strip_tags($article["title"]) ?></h1>
-        
+        <h1 class="text-center"><?= strip_tags($article["title"]) ?></h1>  
         <div class="mt-3 d-flex flex-column ">
-          <div class="d-flex justify-content-between mt-4">
+          <div class="d-flex justify-content-between align-items-center mt-4">
             <small class="text-secondary"><?= strip_tags($article["DATE_FORMAT(created_at, 'Le %d/%m/%Y')"]) ?></small>
             <div class="d-flex">
               <div  class="me-2">
@@ -77,13 +76,13 @@ $articles = $requeteAll->fetchAll();
           </div>
           <img class="img-fluid img-principal mt-3" src="/img/database/<?= strip_tags($article["img"]) ?>" alt="">
         </div>
-        <div class="mt-5 p-2">
+        <div class="mt-5 p-md-2 p-0">
           <p class="text-article text-center"><?= strip_tags($article["texte"]) ?></p>
         </div>
       </div>  
     </div>
-    <div class="col-3 justify-content-center mt-5">
-      <h2 class="text-center mb-5 text-truncate">Nos derniers articles</h2>
+    <div class="col-lg-3 d-none d-lg-block justify-content-lg-center mt-5">
+      <h2 class="text-center mb-5">Nos derniers articles</h2>
       <?php foreach($articles as $article): ?>
         <div class="card mt-3 bg-primary text-light" style="width: 18rem;">
           <div class="card-body">

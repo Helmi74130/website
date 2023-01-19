@@ -69,3 +69,20 @@ footer{
   }
 }
 
+@media screen and (max-width: 490px) {
+  .footer-title{
+    font-size: 1em;
+  }
+  .content-navlink{
+    font-size: 0.5em;
+  }
+
+}
+
+@media screen and (max-width: 390px) {
+  .content-navlink{
+    font-size: 0.4em;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
