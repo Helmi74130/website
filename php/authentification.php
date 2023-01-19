@@ -83,7 +83,7 @@
   <form class="container mt-5" method="post">
     <div class="row justify-content-center">
       <h1 class="text-center">Connexion</h1>
-      <div class="col-4">
+      <div class="col-10 col-lg-8 col-xl-6">
         <div class="mb-3">
           <label for="email" class="form-label">E-mail</label>
           <input name="email" type="mail" class="form-control" id="email" placeholder="E-mail">

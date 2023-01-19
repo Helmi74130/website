@@ -103,4 +103,8 @@ h1{
     padding-left: 5px;
     padding-right: 5px;
   }
+  .img-principal{
+    max-height: 250px;
+    min-height: 250px;
+  }
 }

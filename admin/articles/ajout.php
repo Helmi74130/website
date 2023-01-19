@@ -66,9 +66,9 @@ if(!empty($_POST)){
 
 <main class="mt-5">
     <form method="post" class="container">
-      <h1>Ajout d\'un article</h1>
+      <h1>Ajout d'un article</h1>
       <section class="row justify-content-center  mt-5">
-        <div class="col-8">
+        <div class="col-10 col-md-8">
           <div class="mb-3">
             <label for="title" class="form-label">Titre de l'article</label>
             <input name="title" type="text" class="form-control" id="title" placeholder="Titre">
