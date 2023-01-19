@@ -60,7 +60,13 @@
           "role" => $user["roles"]
         ];
         //On redirige l'utilisateur
-        header("location: profil.php");
+
+        if ($_SESSION["user"]["role"] !== "ROLE_ADMIN" ) {
+          header("location: profil.php");
+        }else {
+          header("location: ../admin/articles/ajout.php");
+        };
+        
 
 
       }else {

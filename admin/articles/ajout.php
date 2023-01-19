@@ -1,6 +1,22 @@
-<?php session_start() ?>
+<?php 
+
+  session_start();
+  
+  //On verifie que l'utilisateur est connecté et qu'il a le role admin
+  if (!empty($_SESSION["user"])){
+
+    if ($_SESSION["user"]["role"] !== "ROLE_ADMIN" ) {
+      header("location: ../../index.php");
+    }
+
+  } else{
+      header("location: ../../index.php");
+  };
+
+?>
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -48,31 +64,30 @@ if(!empty($_POST)){
 
 ?>
 
-
 <main class="mt-5">
-  <form method="post" class="container">
-    <h1>Ajout d'un article</h1>
-    <section class="row justify-content-center  mt-5">
-      <div class="col-8">
-        <div class="mb-3">
-          <label for="title" class="form-label">Titre de l'article</label>
-          <input name="title" type="text" class="form-control" id="title" placeholder="Titre">
+    <form method="post" class="container">
+      <h1>Ajout d\'un article</h1>
+      <section class="row justify-content-center  mt-5">
+        <div class="col-8">
+          <div class="mb-3">
+            <label for="title" class="form-label">Titre de l'article</label>
+            <input name="title" type="text" class="form-control" id="title" placeholder="Titre">
+          </div>
+          <div class="mb-3">
+            <label for="img" class="form-label">Nom de l'image</label>
+            <input name="img" type="texte" class="form-control" id="img" placeholder="Image">
+          </div>
+          <div class="mb-3">
+            <label for="texte" class="form-label">Texte</label>
+            <textarea name="texte" class="form-control" id="texte" rows="5"></textarea>
+          </div>
         </div>
-        <div class="mb-3">
-          <label for="img" class="form-label">Nom de l'image</label>
-          <input name="img" type="texte" class="form-control" id="img" placeholder="Image">
+        <div class="d-flex justify-content-center">
+          <button class="btn btn-primary" type="submit">Confirmer</button>
         </div>
-        <div class="mb-3">
-          <label for="texte" class="form-label">Texte</label>
-          <textarea name="texte" class="form-control" id="texte" rows="5"></textarea>
-        </div>
-      </div>
-      <div class="d-flex justify-content-center">
-        <button class="btn btn-primary" type="submit">Confirmer</button>
-      </div>
-    </section>
-  </form>
-</main>
+      </section>
+    </form>
+  </main>
 
 <?php include_once "../../php/footer.php" ?>
   

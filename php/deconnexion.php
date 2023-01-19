@@ -10,4 +10,4 @@ if (!isset($_SESSION["user"])) {
 //Supprime la variable session
 unset($_SESSION["user"]);
 
-header("location: ../index.php");
+header("location: authentification.php");
